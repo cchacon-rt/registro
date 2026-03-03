@@ -11,7 +11,7 @@ formulario.addEventListener(
         const telefono = document.getElementById("phone").value.trim();
     
     //Elementos de error
-        const errorNombre = document.getElementById("errorName");
+        const errorName = document.getElementById("errorName");
         const errorAge = document.getElementById("errorAge");
         const errorEmail = document.getElementById("errorEmail");
         const errorPhone = document.getElementById("errorPhone");
@@ -28,7 +28,6 @@ formulario.addEventListener(
             errorName.textContent = "";
         }
 
-        let valido = true;
         if(edad === ""){
             errorAge.textContent = "La edad es obligatoria"
             valido = false;
@@ -36,7 +35,6 @@ formulario.addEventListener(
             errorAge.textContent = "";
         } 
 
-        let valido = true;
         if (email === ""){
             errorEmail.textContent = "El correo es obligatorio"
             valido = false;
@@ -44,7 +42,6 @@ formulario.addEventListener(
             errorEmail.textContent = "";
         }
 
-        let valido = true;
         if (phone === ""){
             errorPhone.textContent = "El numero de telefono es obligatorio"
             valido = false;
