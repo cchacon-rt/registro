@@ -8,7 +8,7 @@ formulario.addEventListener(
         const nombre = document.getElementById("name").value.trim();
         const edad = document.getElementById("age").value.trim();
         const email = document.getElementById("email").value.trim();
-        const telefono = document.getElementById("phone").value.trim();
+        const phone = document.getElementById("phone").value.trim();
     
     //Elementos de error
         const errorName = document.getElementById("errorName");
@@ -49,7 +49,7 @@ formulario.addEventListener(
             errorPhone.textContent = "";
         }
 
-      ////////  
+      ///////////  
         if(valido) {
             mensaje.textContent = "Registro correcto";
         }else{
