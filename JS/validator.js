@@ -20,30 +20,31 @@ formulario.addEventListener(
 
 
     //Tecnica del Centinela
-        let valido = true;
+        let valido = true; //ponemos una variable booleana
         if(nombre === ""){
-            errorName.textContent = "El nombre es obligatorio"
+            errorName.textContent = "El nombre es obligatorio";
             valido = false;
         }else{
             errorName.textContent = "";
         }
 
-        if(edad === ""){
-            errorAge.textContent = "La edad es obligatoria"
+            if(edad === "" || (edad<18 || edad>45)){
+        //if((edad<18 || edad>45)){
+            errorAge.textContent = "La edad es obligatoria y debe estar en el rango de 18 a 45";
             valido = false;
         }else{
             errorAge.textContent = "";
         } 
 
         if (email === ""){
-            errorEmail.textContent = "El correo es obligatorio"
+            errorEmail.textContent = "El correo es obligatorio";
             valido = false;
         }else{
             errorEmail.textContent = "";
         }
 
         if (phone === ""){
-            errorPhone.textContent = "El numero de telefono es obligatorio"
+            errorPhone.textContent = "El numero de telefono es obligatorio";
             valido = false;
         }else{
             errorPhone.textContent = "";
